@@ -11,8 +11,40 @@ li {
   list-style-type: none;
 }
 
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
 section {
   background-color: rgb(245, 245, 245);
+}
+
+.click {
+  transition: all 300ms ease;
+}
+
+.click:hover {
+  transform: scale(1.1) ;
+}
+
+.click:active {
+  transform: scale(0.8) ;
+}
+
+.title {
+  font-size: 120px;
+  margin-bottom: 12px;
+  text-align: left;
+  line-height: 1;
+}
+
+.purple {
+  color: rgb(176, 10, 236);
 }
 
 /* 
@@ -26,12 +58,51 @@ LANDING PAGE
 
 .header {
   position: absolute;
-  top; 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1000px;
+  padding: 0 30px;
+}
 
+.header__content {
+  text-align: center;
+}
+
+.header__para {
+  font-size: 24px;
+  line-height: 2;
+  max-width: 450px;
+}
+
+.social__list {
+  margin-top: 16px;
+  display: flex;
+}
+
+.social__link {
+  background-color: rgb(176, 10, 236);
+  color: white;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.mail__btn {
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  border-radius: 50%;
+border: none;
+background-color: #242424;
+color: white;
 }
 
 /* 
@@ -48,6 +119,7 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   height: 100px;
+  padding: 0 20px;
 }
 
 #personal-logo {
@@ -64,10 +136,9 @@ nav {
 }
 
 .nav__link--anchor {
-text-decoration: none;
-font-size: 16px;
-color: #242424;
-font-weight: 700;
+  font-size: 16px;
+  color: #242424;
+  font-weight: 700;
 }
 
 .fa-solid {
