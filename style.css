@@ -65,26 +65,26 @@ section {
 
 .link__hover-effect:after {
   content: "";
-    position: absolute;
-    bottom: -3px;
-    height: 3px;
-    width: 0%;
-    right: 0;
-    background-color: black;
-    transition: 300ms ease;
-  }
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0%;
+  right: 0;
+  background-color: black;
+  transition: 300ms ease;
+}
 
-  .link__hover-effect--white:after {
-    background-color: white;
-  }
+.link__hover-effect--white:after {
+  background-color: white;
+}
 
-  .link__hover-effect--black:after {
-    background-color: #242424;
-  }
+.link__hover-effect--black:after {
+  background-color: #242424;
+}
 
 .link__hover-effect:hover:after {
-left: 0;
-width: 100%;
+  left: 0;
+  width: 100%;
 }
 
 /* 
@@ -247,25 +247,52 @@ MODAL
 }
 
 .modal__half {
-  width: 50%;  
+  width: 50%;
+  padding: 40px 72px;
+  display: flex;
 }
 
 .modal__about {
   background-color: rgb(245, 245, 245);
+  flex-direction: column;
+  justify-content: center;
 }
 
 .modal__contact {
   background-color: #242424;
 }
 
+.modal__title {
+  font-size: 26px;
+}
+
+.modal__sub-title {
+  margin: 12px 0 24px 0;
+}
+
+.modal__para {
+  margin-bottom: 12px;
+  line-height: 1.75;
+}
+
 .orange {
   color: rgb(232, 96, 11);
-  font-weight: bold 
+  font-weight: bold;
 }
 
 .html__logo {
-width: 50%;
-height: 50%;
+  width: 25%;
+  padding: 16px;
+}
+
+.css__logo {
+  width: 25%;
+  padding: 16px;
+}
+
+.javascript__logo {
+  width: 25%;
+  padding: 16px;
 }
 
 /* 
@@ -283,7 +310,6 @@ PROJECTS
 .project__img {
   width: 100%;
 }
-
 
 .project__wrapper {
   position: relative;
@@ -393,6 +419,3 @@ footer {
   justify-content: space-around;
   margin: 28px 0;
 }
-
-
-
