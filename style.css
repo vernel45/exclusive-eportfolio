@@ -258,6 +258,16 @@ MODAL
   background-color: #242424;
 }
 
+.orange {
+  color: rgb(232, 96, 11);
+  font-weight: bold 
+}
+
+.html__logo {
+width: 50%;
+height: 50%;
+}
+
 /* 
 
 PROJECTS
