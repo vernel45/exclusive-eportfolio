@@ -294,7 +294,7 @@ MODAL
   text-align: center;
 }
 
-.modal__language:hover ,.language__name {
+.modal__language:hover .language__name {
 transform: scale(0)
 }
 
