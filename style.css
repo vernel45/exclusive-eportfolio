@@ -283,20 +283,33 @@ MODAL
   row-gap: 6px;
 }
 
+.modal__language {
+  width:
+}
+
 .modal__languages figure img {
   grid-row: 1;
   width: 72px;
   padding: 16px;
+  transform: transition 300ms ease;
   }
 
-.modal__languages figure .language__name {
-  grid-row: 2;
-  text-align: center;
+  .modal__languages figure:hover img {
+  transform: scale(0.9);
 }
 
-.modal__language:hover .language__name {
-transform: scale(0);
-transition: all 300ms ease;
+.modal__languages figure .language__name {
+  transform: scale(0);
+  transition: transform 300ms ease;
+}
+
+.modal__language:hover {
+  filter: brightness(80%);
+  transform: scale(0.9);
+}
+
+.modal__languages figure:hover .language__name {
+  transform: scale(1);
 }
 
 .orange {
