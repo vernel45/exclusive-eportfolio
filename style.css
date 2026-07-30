@@ -275,6 +275,13 @@ MODAL
   line-height: 1.75;
 }
 
+.modal__languages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+
 .modal__languages figure {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
