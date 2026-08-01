@@ -24,8 +24,7 @@ section {
   background-color: rgb(245, 245, 245);
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   background-color: #242424;
   color: white;
@@ -35,6 +34,7 @@ textarea {
   border-left: none;
   border-right: none;
   height: 40px;
+  transition: all 300ms ease;
 }
 
 textarea {
