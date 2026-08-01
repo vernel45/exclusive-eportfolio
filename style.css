@@ -24,6 +24,37 @@ section {
   background-color: rgb(245, 245, 245);
 }
 
+input,
+textarea {
+  width: 100%;
+  background-color: #242424;
+  color: white;
+  outline: none;
+  border: 3px solid #c0c4cc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 40px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input:hover, textarea:hover {
+  border-color: #dcdfe6;  
+}
+
+input:focus, textarea:focus {
+  border-color: #f06449;
+}
+
 .container {
   padding: 50px 0;
   width: 100%;
@@ -250,17 +281,19 @@ MODAL
   width: 50%;
   padding: 40px 72px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .modal__about {
   background-color: rgb(245, 245, 245);
-  flex-direction: column;
-  justify-content: center;
 }
 
 .modal__contact {
   background-color: #242424;
   color: white;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .modal__contact input,
@@ -274,6 +307,7 @@ MODAL
 
 .modal__sub-title {
   margin: 12px 0 24px 0;
+  font-size: 16px;
 }
 
 .modal__para {
@@ -283,10 +317,9 @@ MODAL
 
 .modal__languages {
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-items: center;
 }
-
 
 .modal__languages figure {
   display: grid;
@@ -297,7 +330,7 @@ MODAL
 }
 
 .modal__language {
-  width:25%;
+  width: 25%;
   padding: 16px;
   position: relative;
   display: flex;
@@ -317,9 +350,9 @@ MODAL
   width: 72px;
   padding: 16px;
   transform: transition 300ms ease;
-  }
+}
 
-  .modal__languages figure:hover img {
+.modal__languages figure:hover img {
   transform: scale(0.9);
 }
 
@@ -356,6 +389,32 @@ MODAL
 .javascript__logo {
   width: 25%;
   padding: 16px;
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__submit{
+  background-color: #f06449;
+  border: 2px solid #f06449;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  max-width: 240px;
+  padding: 12px 24px;
+  font-size: 20px;
+  transition: all 300ms ease;
+}
+
+.form__submit:hover {
+ border-color: white;
+ background-color: transparent;
+}
+
+.form__submit:active {
+border-color: #f06449;
+color: #f06449;
 }
 
 /* 
