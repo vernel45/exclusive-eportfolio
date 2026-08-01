@@ -304,6 +304,7 @@ MODAL
   width: 100%;
   height: 100%;
   object-fit: cover;
+  justify-content: space-between;
 }
 
 .modal__languages figure img {
@@ -320,6 +321,7 @@ MODAL
 .modal__languages figure .language__name {
   transform: scale(0);
   transition: transform 300ms ease;
+  grid-row: 2;
 }
 
 .modal__language:hover {
