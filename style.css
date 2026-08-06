@@ -123,6 +123,21 @@ textarea:focus {
   width: 100%;
 }
 
+nav,
+.scroll,
+.header {
+  opacity: 1;
+  visibility: visible;
+  transition: all 600ms 800ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms; 
+}
 /* 
 
 LANDING PAGE
@@ -278,7 +293,7 @@ MODAL
   display: flex;
   visibility: hidden;
   z-index: -1;
-  transition: visinility 1s, z-index 1s, box-shadow s; ease;
+  transition: visibility 1s, z-index 1s, box-shadow 1s; ease;
 }
 
 .modal--open .modal {
