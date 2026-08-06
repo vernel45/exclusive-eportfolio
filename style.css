@@ -171,7 +171,7 @@ LANDING PAGE
   border-radius: 50%;
 }
 
-.mail__btn .fa-envelope {
+.mail__btn {
   font-size: 28px;
   width: 70px;
   height: 70px;
@@ -258,9 +258,6 @@ nav {
   font-weight: 700;
 }
 
-.fa-solid {
-  font-size: 15px;
-}
 
 /* 
 
@@ -280,6 +277,8 @@ MODAL
   overflow: hidden;
   display: flex;
   visibility: hidden;
+  z-index: -1;
+  transition: visinility 1s, z-index 1s, box-shadow s; ease;
 }
 
 .modal--open .modal {
@@ -295,10 +294,17 @@ MODAL
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition: transform 300ms ease-in;
+}
+
+.modal--open .modal__about,
+.modal--open .modal__contact  {
+  transform: translateX(0%);
 }
 
 .modal__about {
   background-color: rgb(245, 245, 245);
+  transform: translateX(-110%);
 }
 
 .modal__contact {
@@ -306,6 +312,7 @@ MODAL
   color: white;
   flex-direction: column;
   justify-content: center;
+  transform: translateX(-110%);
 }
 
 .modal__contact input,
@@ -435,7 +442,7 @@ MODAL
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: -1;
