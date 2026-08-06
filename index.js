@@ -27,8 +27,8 @@ function contact(event) {
 let isModalOpen = false;
 function toggleModal() {
        if (isModalOpen) {
-        isModalOpen = false;
-        return document.body.clssList.remove("modal--open");
+        isModalOpen = !isModalOpen;
+        return document.body.classList.remove("modal--open");
     } 
   document.body.classList.toggle("modal--open");
 }

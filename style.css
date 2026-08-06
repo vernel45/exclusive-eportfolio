@@ -312,7 +312,7 @@ MODAL
   color: white;
   flex-direction: column;
   justify-content: center;
-  transform: translateX(-110%);
+  transform: translateX(110%);
 }
 
 .modal__contact input,
@@ -465,6 +465,7 @@ MODAL
 
 .modal__overlay--visible {
   z-index: 1;
+  display: flex;
 }
 
 .fa-spinner {
