@@ -139,6 +139,10 @@ nav,
   transition: all 400ms; 
 }
 
+.dark-theme section {
+  background-color: #242424;
+}
+
 .dark-theme .title, 
 .dark-theme .section__title,
  .dark-theme .sub-title,
@@ -147,6 +151,19 @@ nav,
  .dark-theme .header__para{
 color: white;
 }
+
+.dark-theme #personal-logo { 
+filter: brightness(0) invert(1); }
+
+.dark-theme .scroll__icon {
+  border-color: white;
+}
+
+.dark-theme .scroll__icon:after {
+  background-color: white;
+}
+
+
 /* 
 
 LANDING PAGE
@@ -302,7 +319,7 @@ MODAL
   display: flex;
   visibility: hidden;
   z-index: -1;
-  transition: visibility 1s, z-index 1s, box-shadow 1s; ease;
+  transition: visibility 1s, z-index 1s, box-shadow 1s ease;
 }
 
 .modal--open .modal {
