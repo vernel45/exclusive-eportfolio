@@ -163,7 +163,10 @@ filter: brightness(0) invert(1); }
   background-color: white;
 }
 
-
+.dark-theme .mail__btn {
+  background-color: white;
+  color: #242424;
+}
 /* 
 
 LANDING PAGE
