@@ -6,6 +6,7 @@ function toggleContrast() {
     if (contrastToggle) {
 document.body.classList += "dark-theme";
 }
+}
 else{
     document.body.classList.remove("dark-theme");
 }
@@ -32,7 +33,6 @@ function contact(event) {
     });
 }
 
-let isModalOpen = false;
 function toggleModal() {
   isModalOpen = !isModalOpen;
   document.body.classList.toggle("modal--open");
