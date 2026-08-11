@@ -7,8 +7,13 @@ function moveBackground(event) {
   const y = event.clientY;
 
   for (let i = 0; i < shapes.length; ++i) {
-    shapes[i].computedStyleMap.transform = `translate(10%, 10%)`
-  }
+  const direction = i % 2 === 0 ? 1 : -1;
+
+  shapes[i].style.transform = `translate(
+    ${(x * direction) / 20}px,
+    ${(y * direction) / 20}px
+  )`;
+}
 }
 
 function toggleContrast() {
