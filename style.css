@@ -7,6 +7,10 @@
   font-family: "roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style-type: none;
 }
@@ -234,9 +238,11 @@ LANDING PAGE
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 40px;
+  z-index: 100;
+  box-shadow: 0 12px 30px 0 rgb(0,0,0,0.2);
 }
 
 .scroll {
